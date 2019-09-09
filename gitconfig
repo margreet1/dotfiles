@@ -49,3 +49,10 @@
 [user]
 	email = dijkstra.margreet@gmail.com
 	name = Margreet Dijkstra
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[url "https://"]
+	insteadOf = git://
